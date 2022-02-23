@@ -1,0 +1,95 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logo {
+  margin: auto 0;
+}
+
+.header{
+  height: 15vh;
+}
+
+.capture {
+  font-family: Ubuntu;
+  color: rgb(57, 162, 219);
+  line-height: 45px;
+}
+
+.navbar{
+ position: relative;
+}
+
+.collapse{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  padding: 1vh 1vw;
+}
+
+.nav__item--collapse{
+  padding: 0.5vh 1vw;
+  /* background-color: aliceblue; */
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5vw;
+  backdrop-filter: blur(5px);
+}
+
+.nav__item:hover{
+  backdrop-filter: drop-shadow(4px 4px 10px blue);
+}
+
+.nav__item a , .nav__item--collapse a {
+  font-family: Ubuntu;
+  font-size: 16px;
+  color: rgb(57, 162, 219);
+  line-height: 45px;
+  letter-spacing: 0.5rem;
+
+}
+
+.toggle{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  /* background-color: tomato; */
+}
+
+.toggle__collapse{
+  /* background-color: black; */
+  /* width: 300px; */
+  margin-top: 12px;
+  margin-right: 4px;
+}
+
+@media screen and (min-width: 769px) {
+  .toggle{
+    display: none;
+  }
+  .collapse{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .nav__list{
+    display: none;
+  }
+
+}
